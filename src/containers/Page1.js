@@ -6,7 +6,6 @@ import Card from '../components/Card';
 import excelLogo from '../assets/icons/noun_excel_150055 (3) 3.svg';
 import csvLogo from '../assets/icons/noun_papers_2044084 (1) 1.svg';
 import styled from 'styled-components';
-const GridPage = styled(Grid)``;
 const RowOfCard = styled(Row)`
   margin: 30px 0px;
 `;
@@ -31,7 +30,7 @@ const TextStyled = styled(Text)`
 `;
 const Page1 = ({ nextPage }) => {
   return (
-    <GridPage>
+    <Grid>
       <Row>
         <Col xs={12}>
           <BigText weight={800} fontSize={'1.8rem'}>
@@ -57,17 +56,18 @@ const Page1 = ({ nextPage }) => {
             <Text>Or</Text>
           </TextStyled>
         </Col>
-        <Col lgOffset={2} xs={12} lg={8} onClick={() => nextPage()}>
+        <Col lgOffset={2} xs={12} lg={8}>
           <Card
             icon={csvLogo}
             title={'Upload Investment Documents'}
             description={
               'Download a cap table spreadsheet template, fill it out, upload the completed template.'
             }
+            disable={true}
           />
         </Col>
       </RowOfCard>
-    </GridPage>
+    </Grid>
   );
 };
 

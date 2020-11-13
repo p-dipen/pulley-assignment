@@ -12,6 +12,9 @@ const BackButton = styled(Col)`
   &:hover {
     cursor: pointer;
     color: var(--clr-primary);
+    img {
+      filter: invert(1);
+    }
   }
   display: flex;
   flex-direction: row;
@@ -23,7 +26,7 @@ const BackButton = styled(Col)`
 `;
 
 const ColCheckbox = styled(Col)`
-  padding: 10px;
+  padding: 13px;
   border-top: 1px solid var(--cool-grey);
   ${({ lastItem }) =>
     lastItem ? `border-bottom: 1px solid var(--cool-grey);` : ''}

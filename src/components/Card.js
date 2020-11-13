@@ -8,11 +8,15 @@ const CardStyled = styled(Row)`
   box-sizing: border-box;
   border-radius: 5px;
   padding: 14px 0px;
-  &:hover {
+  ${({ disable }) =>
+    disable
+      ? `&:hover { cursor: not-allowed;
+        pointer-events: all !important;}`
+      : `&:hover {
     cursor: pointer;
     box-shadow: var(--dark-shadow);
     border-color: var(--clr-tertiary);
-  }
+  }`}
   -webkit-transition: box-shadow 500ms ease-out;
   -moz-transition: box-shadow 500ms ease-out;
   -o-transition: box-shadow 500ms ease-out;
@@ -25,9 +29,9 @@ const ImgContainer = styled(Col)`
     max-width: 67px;
   }
 `;
-const card = ({ icon, title, description }) => {
+const card = ({ icon, title, description, disable = false }) => {
   return (
-    <CardStyled>
+    <CardStyled disable={disable}>
       <ImgContainer xs={12} sm={3} md={2} lg={2}>
         <img src={icon} alt="icon" />
       </ImgContainer>
