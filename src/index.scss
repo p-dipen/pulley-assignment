@@ -1,0 +1,62 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@font-face {
+  font-family: 'Inter';
+  src: url('assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf');
+}
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  --ff-primary: 'Inter';
+  --clr-white: #fff;
+  --clr-primary: #0f2319;
+  --clr-secondary: #53b58d;
+  --clr-tertiary: #518771;
+  --cool-grey: #9f9f9f;
+  --light-green: rgba(83, 181, 141, 0.05);
+  --light-green2: rgba(83, 181, 141, 0.09);
+  --dark-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+html {
+  font-size: 16px;
+}
+// @media (max-width: 1024px) {
+//   html {
+//     font-size: 11px;
+//   }
+// }
+// @media (max-width: 400px) {
+//   html {
+//     font-size: 10px;
+//   }
+// }
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 20px 20px 0px 20px;
+  color: var(--clr-primary);
+  font-family: var(--ff-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
