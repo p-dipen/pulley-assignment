@@ -4,9 +4,7 @@
 
 <p align="center"><a href="https://pulley-assignment.netlify.app/" target="_blank">live demo</a></p>
 
-<p align="center">
-    <img src="https://i.imgur.com/L2wfJ3G.gif" />
-</p>
+![](https://media.giphy.com/media/zQa069zWDW9qrPd87f/giphy.gif)
 
 ## :pushpin: Setup
 
