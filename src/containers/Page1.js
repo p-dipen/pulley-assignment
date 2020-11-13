@@ -42,7 +42,7 @@ const Page1 = ({ nextPage }) => {
         </Col>
       </Row>
       <RowOfCard>
-        <Col lgOffset={2} xs={12} lg={8} onClick={() => nextPage()}>
+        <Col xs={12} onClick={() => nextPage()}>
           <Card
             icon={excelLogo}
             title={'Upload Spreadsheet'}
@@ -51,12 +51,12 @@ const Page1 = ({ nextPage }) => {
             }
           />
         </Col>
-        <Col lgOffset={2} xs={12} lg={8}>
+        <Col xs={12}>
           <TextStyled>
             <Text>Or</Text>
           </TextStyled>
         </Col>
-        <Col lgOffset={2} xs={12} lg={8}>
+        <Col xs={12}>
           <Card
             icon={csvLogo}
             title={'Upload Investment Documents'}
