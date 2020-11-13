@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Page1 from './containers/Page1';
+import Page2 from './containers/Page2';
 
 function App() {
+  const [page, setPage] = useState(1);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {page === 1 ? (
+        <Page1 nextPage={() => setPage(2)} />
+      ) : (
+        <Page2 prevPage={() => setPage(1)} />
+      )}
     </div>
   );
 }
