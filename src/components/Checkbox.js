@@ -5,6 +5,7 @@ const CheckboxContainer = styled.div`
   display: inline-block;
   vertical-align: middle;
   font-family: 'system-ui';
+  padding-right: 18px;
 `;
 
 const Icon = styled.svg`
@@ -40,8 +41,8 @@ const StyledCheckbox = styled.div`
   }
 `;
 
-const Checkbox = ({ className, checked, ...props }) => (
-  <CheckboxContainer className={className}>
+const Checkbox = ({ checked, ...props }) => (
+  <CheckboxContainer>
     <HiddenCheckbox checked={checked} {...props} />
     <StyledCheckbox checked={checked}>
       <Icon viewBox="0 0 24 24">
