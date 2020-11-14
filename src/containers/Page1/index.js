@@ -1,39 +1,18 @@
 import React from 'react';
-import BigText from '../components/BigText';
-import Text from '../components/Text';
+import BigText from '../../components/BigText';
+import Text from '../../components/Text';
 import { Grid, Row, Col } from 'react-flexbox-grid';
-import Card from '../components/Card';
-import excelLogo from '../assets/icons/noun_excel_150055 (3) 3.svg';
-import csvLogo from '../assets/icons/noun_papers_2044084 (1) 1.svg';
-import styled from 'styled-components';
-const RowOfCard = styled(Row)`
-  margin: 30px 0px;
-`;
-const TextStyled = styled(Text)`
-  display: flex;
-  justify-content: flex-start;
-  &:after,
-  &:before {
-    content: '';
-    border-top: 1px solid var(--cool-grey);
-    margin: 0 20px 0 0;
-    align-self: center;
-  }
-  &:before {
-    flex: 0.1 0;
-  }
-  &:after {
-    margin: 0 0 0 20px;
-    flex: 1 0;
-  }
-  margin: 20px 0px;
-`;
+import Card from '../../components/Card';
+import excelLogo from '../../assets/icons/noun_excel_150055 (3) 3.svg';
+import csvLogo from '../../assets/icons/noun_papers_2044084 (1) 1.svg';
+import { RowOfCard, TextStyled } from './Page1Style';
+
 const Page1 = ({ nextPage }) => {
   return (
     <Grid>
       <Row>
         <Col xs={12}>
-          <BigText weight={800} fontSize={'1.8rem'}>
+          <BigText weight={800} fontSize={'1.44rem'}>
             Let’s Create your Cap Table!
           </BigText>
         </Col>
@@ -63,7 +42,7 @@ const Page1 = ({ nextPage }) => {
             description={
               'Download a cap table spreadsheet template, fill it out, upload the completed template.'
             }
-            disable={true}
+            disablecard={true}
           />
         </Col>
       </RowOfCard>
