@@ -14,7 +14,9 @@ const TitleDescription = ({ title, description }) => {
     <ColTitleDescription xs={12} sm={9} md={10} lg={10}>
       <Row>
         <Col xs={12}>
-          <TitleText weight={600}>{title}</TitleText>
+          <TitleText weight={600} fontSize="1.1rem">
+            {title}
+          </TitleText>
         </Col>
         <Col xs={12}>
           <Text>{description}</Text>
