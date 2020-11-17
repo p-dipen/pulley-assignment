@@ -22,21 +22,33 @@ const CardStyled = styled(Row)`
   -o-transition: box-shadow 500ms ease-out;
 `;
 const ImgContainer = styled(Col)`
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0px;
   max-height: 91px;
-  img {
-    width: 100%;
-    height: 100%;
-  }
+  width: 67px;
+  ${({ iconName }) => iconName === 'csv' && 'img {margin: 8px 0px;}'}
 `;
-const card = ({ icon, title, description, disablecard }) => {
+const card = ({
+  icon,
+  title,
+  description,
+  disablecard,
+  iconHeight,
+  iconName,
+}) => {
   return (
     <CardStyled disablecard={disablecard || false}>
-      <ImgContainer xs={12} sm={3} md={2} lg={2}>
-        <img src={icon} alt="icon" />
+      <ImgContainer xs={3} sm={2} iconName={iconName}>
+        <img src={icon} alt={iconName} height={iconHeight} />
       </ImgContainer>
-      <TitleDescription title={title} description={description} />
+      <TitleDescription
+        xs={9}
+        sm={10}
+        title={title}
+        description={description}
+      />
     </CardStyled>
   );
 };
