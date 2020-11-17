@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Row } from 'react-flexbox-grid';
+import { Row, Col } from 'react-flexbox-grid';
 import Text from '../../components/Text';
 
 export const RowOfCard = styled(Row)`
@@ -11,7 +11,7 @@ export const TextStyled = styled(Text)`
   &:after,
   &:before {
     content: '';
-    border-top: 1px solid var(--cool-grey);
+    border-top: 1px solid var(--cool-grey2);
     margin: 0 20px 0 0;
     align-self: center;
   }
@@ -23,4 +23,8 @@ export const TextStyled = styled(Text)`
     flex: 1 0;
   }
   margin: 20px 0px;
+`;
+
+export const BorderCol = styled(Col)`
+  padding: 0px;
 `;
