@@ -4,10 +4,10 @@ import { Row, Col } from 'react-flexbox-grid';
 import TitleDescription from './TitleDescription';
 const CardStyled = styled(Row)`
   background-color: var(--light-green);
-  border: 1.5px solid var(--clr-secondary);
+  border: 1.5px solid rgba(83, 181, 141, 0.8);
   box-sizing: border-box;
   border-radius: 5px;
-  padding: 14px 0px;
+  padding: 10.5px 0px;
   ${({ disablecard }) =>
     disablecard
       ? `&:hover { cursor: not-allowed;

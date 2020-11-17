@@ -5,7 +5,7 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 import Card from '../../components/Card';
 import excelLogo from '../../assets/icons/noun_excel_150055 (3) 3.svg';
 import csvLogo from '../../assets/icons/noun_papers_2044084 (1) 1.svg';
-import { RowOfCard, TextStyled } from './Page1Style';
+import { RowOfCard, TextStyled, BorderCol } from './Page1Style';
 
 const Page1 = ({ nextPage }) => {
   return (
@@ -30,11 +30,11 @@ const Page1 = ({ nextPage }) => {
             iconName={'excel'}
           />
         </Col>
-        <Col xs={12}>
+        <BorderCol xs={12}>
           <TextStyled>
-            <Text>Or</Text>
+            <Text weight={600}>Or</Text>
           </TextStyled>
-        </Col>
+        </BorderCol>
         <Col xs={12}>
           <Card
             icon={csvLogo}
