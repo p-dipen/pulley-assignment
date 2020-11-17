@@ -71,9 +71,7 @@ const Page2 = ({ prevPage }) => {
       )}
       <Row>
         <Col xs={12}>
-          <BigText weight={800} fontSize={'1.44rem'}>
-            Let’s Create your Cap Table!
-          </BigText>
+          <BigText>Let’s Create your Cap Table!</BigText>
         </Col>
         <Col xs={12}>
           <Text>

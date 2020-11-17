@@ -12,9 +12,7 @@ const Page1 = ({ nextPage }) => {
     <Grid>
       <Row>
         <Col xs={12}>
-          <BigText weight={800} fontSize={'1.44rem'}>
-            Let’s Create your Cap Table!
-          </BigText>
+          <BigText>Let’s Create your Cap Table!</BigText>
         </Col>
         <Col xs={12}>
           <Text>Select how you would like to create your cap table.</Text>
@@ -28,6 +26,8 @@ const Page1 = ({ nextPage }) => {
             description={
               'Download a cap table spreadsheet template, fill it out, upload the completed template. '
             }
+            iconHeight={'67px'}
+            iconName={'excel'}
           />
         </Col>
         <Col xs={12}>
@@ -43,6 +43,8 @@ const Page1 = ({ nextPage }) => {
               'Download a cap table spreadsheet template, fill it out, upload the completed template.'
             }
             disablecard={true}
+            iconHeight={'51px'}
+            iconName={'csv'}
           />
         </Col>
       </RowOfCard>
